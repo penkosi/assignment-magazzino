@@ -1,0 +1,8 @@
+/*Creazione file oggetto*/
+clang++ -c main.cpp -o main.o
+clang++ -c magazzino.cpp -o magazzino.o
+clang++ -c prodotti.cpp -o prodotti.o
+
+
+/*Link dei file oggetto al programma*/
+clang++ -o programma main.o magazzino.o prodotti.o
